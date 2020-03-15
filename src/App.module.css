@@ -1,0 +1,19 @@
+.App {
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.leftPanel {
+    width: 50%;
+    height: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+}
+
+.rightPanel {
+    width: 50%;
+    height: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}

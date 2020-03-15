@@ -1,0 +1,23 @@
+.title {
+    color: #333333;
+}
+
+.earthquakeBtn {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .6rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    margin-bottom: 0.5rem;
+}
+
+.dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
