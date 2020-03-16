@@ -1,0 +1,59 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 11px 15px -7px rgba(0,0,0,0.2),
+                0 24px 38px 3px rgba(0,0,0,0.14),
+                0 9px 46px 8px rgba(0,0,0,0.12);
+}
+
+.body {
+    padding: 18px 24px;
+}
+
+.btnContainer {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.actionBtn {
+    color: #1976d2;
+    padding: 6px 8px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.actionBtn:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+}
+.actionBtn:hover:active {
+    background-color: rgba(25, 118, 210, 0.2);
+}
+.actionBtn:not(:first-child) {
+    margin-left: 8px;
+}

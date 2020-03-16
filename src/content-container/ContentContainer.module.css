@@ -1,6 +1,7 @@
 .contentContainer {
-  padding-top: 60px;
   display: flex;
   flex-direction: row;
   height: 100%;
+  padding-top: 60px;
+  box-sizing: border-box;
 }

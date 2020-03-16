@@ -4,8 +4,6 @@ import styles from './EarthquakeDetails.module.css';
 
 function EarthquakeDetails(props) {
 
-    console.log('hiiii');
-
     let earthquakeDetails = (
         <p>Please select an earthquake.</p>
     );
