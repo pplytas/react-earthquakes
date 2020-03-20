@@ -10,10 +10,17 @@
     font-size: 1rem;
     border-radius: .25rem;
     margin-bottom: 0.5rem;
+    transition: color .15s ease-in-out,
+                background-color .15s ease-in-out,
+                border-color .15s ease-in-out,
+                box-shadow .15s ease-in-out;
+}
+.earthquakeBtn:hover {
+    color: #ffffff;
+    background-color: rgba(50, 143, 184, 0.7);
 }
 
-.dark {
-    color: #fff;
-    background-color: #343a40;
-    border-color: #343a40;
+.earthquakeBtn.active {
+    color: #ffffff;
+    background-color: #2E86AB;
 }

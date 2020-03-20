@@ -7,7 +7,7 @@ import Navbar from './navbar/Navbar';
 import ContentContainer from './content-container/ContentContainer';
 import EarthquakesView from './earthquakes-view/EarthquakesView';
 import EarthquakeDetails from './earthquake-details/EarthquakeDetails';
-import Dialog from './shared-components/dialog/Dialog';
+import Dialog from './shared/components/dialog/Dialog';
 import * as fromEarthquakesActions from './store/actions/earthquakes';
 
 
@@ -31,6 +31,11 @@ function App() {
         dispatch(fromEarthquakesActions.loadEarthquakesFail())
     ), [dispatch]);
 
+    const changeEarthquakeDetails = useCallback((earthquakeId) => {
+        const selectedEarthquakeResult = earthquakes.find(earthquake => earthquake.id === earthquakeId);
+        setSelectedEarthquake(selectedEarthquakeResult);
+    }, [earthquakes]);
+
     useEffect(() => {
         loadEarthquakes();
         axios.get('https://earthquakeapi.plytas.com/earthquakes')
@@ -50,10 +55,11 @@ function App() {
             });
     }, [loadEarthquakes, loadEarthquakesSuccess, loadEarthquakesFail]);
 
-    function changeEarthquakeDetails(earthquakeId) {
-        const selectedEarthquakeResult = earthquakes.find(earthquake => earthquake.id === earthquakeId);
-        setSelectedEarthquake(selectedEarthquakeResult);
-    }
+    useEffect(() => {
+        if (earthquakes.length > 0) {
+            changeEarthquakeDetails(earthquakes[earthquakes.length - 1].id);
+        }
+    }, [earthquakes, changeEarthquakeDetails]);
 
     function hideDialog() {
         setErrorDialog({

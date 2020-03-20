@@ -2,6 +2,16 @@
     color: #333333;
 }
 
+.mapContainer {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mapImg {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
 .detailContainer {
     margin-bottom: 1rem;
 }
