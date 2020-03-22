@@ -69,6 +69,10 @@ function App() {
         });
     }
 
+    function closePanel() {
+        setSelectedEarthquake(null);
+    }
+
     return (
         <div className={styles.App}>
             <Navbar/>
@@ -76,8 +80,8 @@ function App() {
                 <div className={styles.leftPanel}>
                     <EarthquakesView onEarthquakeClick={changeEarthquakeDetails}/>
                 </div>
-                <div className={styles.rightPanel}>
-                    <EarthquakeDetails earthquake={selectedEarthquake}/>
+                <div className={`${styles.rightPanel} ${(selectedEarthquake != null) ? styles.open : ''}`}>
+                    <EarthquakeDetails earthquake={selectedEarthquake} onCloseClick={closePanel}/>
                 </div>
             </ContentContainer>
             <Dialog show={errorDialog.show}

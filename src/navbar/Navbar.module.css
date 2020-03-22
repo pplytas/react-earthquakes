@@ -1,11 +1,13 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 10px 15px;
-    background: #564154;
+    background-color: #564154;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 200;
 }
 
 .imgLogo {

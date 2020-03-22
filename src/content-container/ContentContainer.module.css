@@ -1,7 +1,7 @@
 .contentContainer {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  padding-top: 60px;
-  box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    box-sizing: border-box;
 }
